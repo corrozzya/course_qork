@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Art Expo | Выставки</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .exhibition-hero {
+            background: url('./images/back.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">>> ART. EXPO </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./exhibitions.html">Выставки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./artists.html">Художники</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Exhibition Hero -->
+    <section class="exhibition-hero text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold" style="color: rgb(37, 37, 37);">Наши выставки</h1>
+            <p class="lead" style="color: rgb(37, 37, 37);">Три уникальные экспозиции современного искусства</p>
+        </div>
+    </section>
+
+    <!-- Current Exhibitions -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Текущие выставки</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="./images/back-1.jpg" class="card-img-top" alt="Цифровые горизонты">
+
+<div class="card-body d-flex flex-column h-100">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Цифровые горизонты</h3>
+                            <p class="card-text"><small class="text-muted">15 июня - 5 июля 2023</small></p>
+                            <p class="card-text">Эта выставка исследует пересечение искусства и технологии, представляя работы, созданные с использованием цифровых медиа, алгоритмического дизайна и интерактивных инсталляций.</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item"><strong>Куратор:</strong> Анна Соколова</li>
+                                <li class="list-group-item"><strong>Место:</strong> Зал A</li>
+                                <li class="list-group-item"><strong>Время работы:</strong> 11:00 - 20:00</li>
+                            </ul>
+                            <button class="btn btn-primary buy-ticket mt-auto" data-exhibition="Название выставки" data-bs-toggle="modal" data-bs-target="#ticketModal">Купить билет</button>
+                        </div>
+</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="./images/back-2.jpg" class="card-img-top" alt="Материя и форма">
+
+<div class="card-body d-flex flex-column h-100">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Материя и форма</h3>
+                            <p class="card-text"><small class="text-muted">8 июля - 25 июля 2023</small></p>
+                            <p class="card-text">Экспозиция посвящена современной скульптуре и инсталляциям, где художники экспериментируют 
+                                с новыми материалами и формами, создавая удивительные пространственные композиции.</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item"><strong>Куратор:</strong> Иван Петров</li>
+                                <li class="list-group-item"><strong>Место:</strong> Зал B</li>
+                                <li class="list-group-item"><strong>Время работы:</strong> 11:00 - 20:00</li>
+                            </ul>
+                            <button class="btn btn-primary buy-ticket mt-auto" data-exhibition="Название выставки" data-bs-toggle="modal" data-bs-target="#ticketModal">Купить билет</button>
+                        </div>
+</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="./images/back-3.jpg" class="card-img-top" alt="Абстрактные реальности">
+
+<div class="card-body d-flex flex-column h-100">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Абстрактные реальности</h3>
+                            <p class="card-text"><small class="text-muted">1 августа - 30 августа 2023</small></p>
+                            <p class="card-text">Выставка представляет современную абстрактную живопись и графику, где художники исследуют новые визуальные языки и способы восприятия реальности.</p>
+                            
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item"><strong>Куратор:</strong> Мария Козлова</li>
+                                <li class="list-group-item"><strong>Место:</strong> Зал C</li>
+                                <li class="list-group-item"><strong>Время работы:</strong> 11:00 - 20:00</li>
+                            </ul>
+                            <button class="btn btn-primary buy-ticket mt-auto" data-exhibition="Название выставки" data-bs-toggle="modal" data-bs-target="#ticketModal">Купить билет</button>
+                        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">События</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./images/pic4.jpg" class="img-fluid rounded-start h-100" alt="Лекция">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Лекция: Искусство<br>в цифровую эпоху</h4>
+                                    <p class="card-text"><small class="text-muted">20 июня, 19:00 | Лекционный зал</small></p>
+                                    <p class="card-text">Обсуждение трансформации искусства под влиянием новых технологий.</p>
+                                    <a href="#" class="btn btn-outline-primary">Зарегистрироваться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./images/pic1.jpg" class="img-fluid rounded-start h-100" alt="Мастер-класс">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Мастер-класс<br>по цифровой живописи</h4>
+                                    <p class="card-text"><small class="text-muted">5 июля, 16:00 | Студия A</small></p>
+                                    <p class="card-text">Практическое занятие с художником Анной Соколовой.</p>
+                                    <a href="#" class="btn btn-outline-primary">Зарегистрироваться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Modern Art Expo</h5>
+                    <p>Выставка современного искусства в Москве.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <p>Москва, ARTPLAY<br>info@artexpo.ru<br>+7 (495) 123-45-67</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Соцсети</h5>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-telegram fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-vk fa-lg"></i></a>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">© 2023 Modern Art Expo. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Политика конфиденциальности</a>
+                    <a href="#" class="text-white">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Modal for Ticket Purchase -->
+<div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="ticketModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ticketModalLabel">Покупка билета</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="ticketForm">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">ФИО</label>
+                        <input type="text" class="form-control" id="fullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Телефон</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ticketType" class="form-label">Тип билета</label>
+                        <select class="form-select" id="ticketType" required>
+                            <option value="" selected disabled>Выберите тип билета</option>
+                            <option value="adult">Взрослый - 1000 р</option>
+                            <option value="student">Студенческий - 700 руб</option>
+                            <option value="child">Детский - 500 р</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="visitDate" class="form-label">Дата посещения</label>
+                        <input type="date" class="form-control" id="visitDate" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                        <label class="form-check-label" for="agreeTerms">Я согласен с условиями покупки</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary" id="submitTicket">Купить билет</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
